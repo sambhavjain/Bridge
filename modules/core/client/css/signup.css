@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+div.header {
+	background-image: none;
+	height: 0px;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+div.body-content {
+	padding: 0px;
+}
+/* Navigation */
+div.nav ul li a {
+	color: black;
+}
+div.nav ul li a {
+	color: black;
+}
+div.nav ul li:hover a {
+	color: #CCC;
+	border: none;
+}
+.main {
+	padding-top: 50px;
+	text-align: center;
+	font-size: 50px;
+}
+.footer {
+	margin-top: 10%;
+}

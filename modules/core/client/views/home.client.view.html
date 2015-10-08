@@ -1,0 +1,247 @@
+<section ng-controller="HomeController">
+  <div data-ng-if="authentication.user">
+      <div class="nav2">
+                <ul class="clearfix">
+                  <li><a ui-sref="home.workspace">Workspace</a></li>
+                  <li><a href="#">Reports</a></li>
+                  <li><a ui-sref="home.profile" style="color: #02aeae;">Company Profile</a></li>
+                </ul>
+          </div>
+        
+          <div ui-view></div>
+
+</div>
+
+<div data-ng-if="!authentication.user">
+  <div class="why" style="padding-top: 28px;">
+        <h2>Why Bridge?</h2>
+          <br><div style="text-align:center; font-size: 120%;color: black;">Over $1.8 Billion Invested in Startups Through Bridge </div>
+          <br><div style="text-align:center; font-size: 70%;color: black;">Bridge connects startups with the largest collection of investors across the world. </div>
+      </div>
+
+      <div style=" height: 450px; background-image:url('modules/core/client/img/bground/back4.jpg'); background-size: cover;">
+        <div class="startup-text">
+        <!-- thirds -->
+<div class="thirds clearfix" style=" color: white;">
+
+<!-- one-third -->
+<div class="one-third mobile-collapse">
+
+  <h1 style="text-align: center;">For Startups</h1>
+  <p><br>
+Build a profile and share it with investors to get funding. </p>
+</div><!--/one-third-->
+
+<!-- one-third -->
+<div class="one-third one-third-second mobile-collapse"  style="margin-left:20%;">
+
+  <h1 style="text-align: center;">For Investors</h1>
+  <p><br>
+Access powerful deal flow management tools on a secure platform. </p>
+</div><!--/one-third-->
+
+</div><!--/thirds-->
+
+        </div>
+
+      </div>
+
+<div class="section-inner">
+
+      <div class="trends">
+        <h2>Trends & Insights</h2>
+    </div>
+<!-- thirds -->
+<div class="trends-thirds clearfix">
+
+<!-- one-third -->
+<div class="trends-one-third mobile-collapse" >
+
+  <h2 style="text-align: center;"><img src="modules/core/client/img/icons/stocks4.png" width="35%" height="auto"></h2>
+  <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><a href="#" style="text-decoration: none;">Get Started</a></p>
+</div><!--/one-third-->
+
+<div class="trends-one-third trends-one-third-second mobile-collapse">
+<!-- one-third -->
+
+  <h2 style="text-align: center;"><img src="modules/core/client/img/icons/stocks2.png" width="35%" height="auto"></h2>
+  <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><a href="#" style="text-decoration: none;">Get Started</a></p>
+</div><!--/one-third-->
+
+<div class="trends-one-third trends-one-third-last mobile-collapse">
+
+  <h2 style="text-align: center;"><img src="modules/core/client/img/icons/stocks3.png" width="35%" height="auto"></h2>
+  <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><a href="#" style="text-decoration: none;">Get Started</a></p>
+</div><!--/one-third-->
+
+</div><!--/thirds-->
+
+
+  <div class="browse">
+        <h2><img src="modules/core/client/img/icons/industryicon.png" width="4%" height="auto"><br>Browse By Location</h2>
+           <br><div style="text-align:center; font-size: 100%;color: black;">Investors are five times more likely to invest locally.</div>
+  </div>
+  </div>
+<!-- thirds -->
+<div class="browse-thirds clearfix">
+
+<!-- one-third -->
+
+      <div class="browse-one-third mobile-collapse">
+      <img src="modules/core/client/img/city/delhi.jpg" width="100%" height="auto">
+              <br><br>
+              <b>New Delhi</b><br><br>
+              18,00+ Startups<br>100+ Organizations
+
+       </div><!--/one-third-->
+
+       <div class="browse-one-third browse-one-third-second mobile-collapse">
+
+            <img src="modules/core/client/img/city/surat.jpg" width="100%" height="auto">
+              <br><br>
+              <b>Surat</b><br><br>
+              11,00+ Startups<br>150+ Organizations
+
+       </div>
+       <div class="browse-one-third browse-one-third-second mobile-collapse">
+
+            <img src="modules/core/client/img/city/hyderabad.jpg" width="100%" height="20%">
+              <br><br>
+              <b>Hyderabad</b><br><br>
+              10,00+ Startups<br>100+ Organizations
+
+       </div>
+       <div class="browse-one-third browse-one-third-last browse-one-third-mumbai mobile-collapse">
+
+            <img src="modules/core/client/img/city/mumbai.jpg" width="100%" height="auto">
+              <br>
+              <b>Mumbai</b><br><br>
+              15,00+ Startups<br>120+ Organizations
+
+       </div>
+       <div class="browse-one-third browse-one-third-last mobile-collapse">
+
+            <img src="modules/core/client/img/city/bangalore.jpg" width="100%" height="20%" >
+              <br>
+              <b>Bangalore</b><br><br>
+              20,00+ Startups<br>150+ Organizations
+
+       </div>
+</div><!--/browse-->
+
+
+  <div class="industry">
+        <h2><img src="modules/core/client/img/icons/industryicon4.png" width="5%" height="auto"><br>Browse By Industry</h2>
+
+  </div>
+<!-- thirds -->
+<div class="industry-thirds clearfix">
+
+<!-- one-third -->
+
+      <div class="industry-one-third mobile-collapse">
+        <br><br>
+      <img src="modules/core/client/img/icons/food.png" width="38%" height="auto">
+              <br><br>
+              <b>Food & Drink</b><br><br>
+              18,00+ Startups<br>100+ Organizations
+
+
+       </div><!--/one-third-->
+
+       <div class="industry-one-third industry-one-third-second mobile-collapse">
+    <br><br>
+            <img src="modules/core/client/img/icons/web2.png" width="38%" height="auto">
+              <br><br>
+              <b>Internet/Web Services</b><br><br>
+              11,00+ Startups<br>150+ Organizations
+
+       </div>
+       <div class="industry-one-third industry-one-third-second mobile-collapse">
+    <br><br>
+            <img src="modules/core/client/img/icons/healthicon.png" width="38%" height="auto">
+              <br><br>
+              <b>Health Care</b><br><br>
+              10,00+ Startups<br>100+ Organizations
+
+       </div>
+       <div class="industry-one-third industry-one-third-last industry-one-third-mumbai mobile-collapse">
+  <br><br>
+            <img src="modules/core/client/img/icons/cart2.png" width="38%" height="auto">
+              <br><br>
+              <b>Consumer Products & Services</b><br>
+              15,00+ Startups<br>120+ Organizations
+
+       </div>
+       <div class="industry-one-third industry-one-third-last mobile-collapse">
+  <br><br>
+            <img src="modules/core/client/img/icons/media.png" width="38%" height="auto" >
+              <br><br>
+              <b>Media Services</b><br><br>
+              20,00+ Startups<br>150+ Organizations
+       </div>
+
+</div><!--/industry-->
+
+
+      <div class="trends">
+        <h2></h2>
+    </div>
+<!-- thirds -->
+<div class="trends-thirds clearfix">
+
+<!-- one-third -->
+<div class="trends-one-third mobile-collapse" style="color: #707070;">
+
+  <h2 style="text-align: center;"><img src="modules/core/client/img/icons/shield1.png" width="30%" height="auto"></h2>
+  <div style="text-align: center;"><br>
+            <div style="font-weight: bold; font-size: 28px; color: #336666;">The Trusted Network</div><br>
+
+Tens of thousands of accredited investors worldwide use Bridge to connect and collaborate with startup companies. <br><a href="#" style="text-decoration: none;">Learn More</a></div>
+</div><!--/one-third-->
+
+<!-- one-third -->
+<div class="trends-one-third trends-one-third-second mobile-collapse" style="color: #707070;">
+
+  <h2 style="text-align: center;"><img src="modules/core/client/img/icons/lock.png" width="30%" height="auto"></h2>
+  <div style="text-align: center;"><br> <div style="font-weight: bold; font-size: 28px; color: #336666;">Robust Privacy Controls</div><br>
+
+Bridge enables you to control your privacy settings, profile visibility and who has access to your information. What's private stays private.  <br><a href="#" style="text-decoration: none;">Learn More</a></div>
+</div><!--/one-third-->
+
+<div class="trends-one-third trends-one-third-last mobile-collapse" style="color: #707070;">
+
+  <h2 style="text-align: center;"><img src="modules/core/client/img/icons/standard.png" width="30%" height="auto"></h2>
+  <div style="text-align: center;"><br><div style="font-weight: bold; font-size: 28px; color: #336666;"> The Industry Standard</div><br>
+
+With more than 1,000 investment groups across 80+ countries, Bridge is the global industry standard for early stage investing. <br><a href="#" style="text-decoration: none;">Learn More</a></div>
+</div><!--/one-third-->
+
+</div><!--/thirds-->
+</div>
+
+<!-- footer -->
+<div class="footer" style="width:1080px;margin-left:-7%;">
+  <div style="text-align: center;">
+        <table id="footertable" align="center">
+            <tr>
+                <td><a href="#">Company Info</a></td>
+                  <td><a href="#">Industry Standard</td>
+                  <td><a href="#">Startups</td>
+                  <td><a href="#">Investors</td>
+                  <td><a href="#">Blog</td>
+                  <td><a href="#">Video</td>
+                  <td><a href="#">Support</td>
+                  <td><a href="#">Careers</td>
+                  <td><a href="#">Contact Us</td>
+          </table>
+      </div>
+  <p>©2015 Bridge. All rights reserved. </p>
+
+                <a href="#"><img src="modules/core/client/img/icons/twitter1.png" width="3%"></a>&nbsp;&nbsp;
+                  <a href="#"><img src="modules/core/client/img/icons/facebook.png" width="3%"></a>&nbsp;&nbsp;
+                  <a href="#"><img src="modules/core/client/img/icons/linkedin1.png" width="3%"></a>
+  <p><a href="#">Terms of Services</a> &nbsp;&nbsp;&nbsp; <a href="#">Privacy</a> &nbsp;&nbsp;&nbsp; <a href="#">FAQs</a> &nbsp;&nbsp;&nbsp; <a href="#">License Bridge</a></p>
+</div><!--/footer-->
+
+</section>

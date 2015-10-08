@@ -1,0 +1,143 @@
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 1em 0;
+	font-size: 93%;
+	line-height: 1.5em;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	/*background-color: #3f3f3f;*/
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px 0;
+}
+
+/* Section Inner */
+div.section-inner {
+	max-width: 2100px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+/* Header*/
+div.header {
+	background-image: url(../img/bground/slider2.jpg);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 520px;
+}
+
+/*Bridge*/
+div.header-center {
+	padding: 12%;
+}
+
+div.why,div.trends{
+	text-align: center;
+	color: #2386A3;
+	font-size: 30px;
+	padding-top: 90px;
+
+}
+
+div.trends {
+	padding-top: 90px;
+}
+
+div.browse,div.industry {
+	text-align: center;
+	color: #2386A3;
+	font-size: 20px;
+	padding-top: 90px;
+}
+
+/* Thirds */
+div.thirds {
+	padding-top: 120px;
+	padding-bottom: 50px;
+
+}
+div.trends-thirds,div.browse-thirds,div.industry-thirds{
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+div.one-third {
+	width: 30%;
+	float: left;
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+div.trends-one-third {
+	width: 25%;
+	float: left;
+	margin-left: 6%;
+	margin-right: 5%;
+	text-align: justify;
+}
+
+div.trends-one-third-last{
+	margin: 0;
+
+}
+div.trends-one-third-second {
+	margin-left: 0%;
+}
+
+div.one-third-second {
+	margin-left: 20%;
+}
+div.browse-one-third, div.industry-one-third {
+	border-style: solid;
+	border-color:#CCC;
+	border-width: 1px;
+	width: 14%;
+	height: 30%;
+	margin-left: 8.5%;
+	margin-right:3%;
+	text-align:center;
+	font-size: 18px;
+	padding-bottom: 4%;
+	float: left;
+	display: inline;
+}
+div.browse-one-third:hover, div.industry-one-third:hover {
+	border-width: 1px;
+	border-color:#09C;
+}
+div.browse-one-third-second,div.browse-one-third-last,div.industry-one-third-second,div.industry-one-third-last{
+	margin-left:0%;
+}
+
+div.startup-text {
+	position: relative;
+	top: 0px;
+	margin-top: 30px;
+	//color: #284388;
+	color: white;
+	//font-family: 'Open Sans', sans-serif;
+	 font-family: 'Gentium Basic', serif;
+
+	font-size: 28px;
+	font-weight: 800;
+}
+div.investor-text {
+	position: relative;
+	top: 0px;
+	//padding-right: 170px;
+	padding-left: 57%;
+	color: #284388;
+	font-size: 45px;
+	font-weight: 800;
+
+}
