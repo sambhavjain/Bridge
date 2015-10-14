@@ -40,8 +40,8 @@ exports.editBanner = function (req, res) {
 		              message: errorHandler.getErrorMessage(saveError)
 		            });
 		          } else {
-								console.log('image saved');
-								res.send(profile);
+								console.log(profile);
+								res.json(profile);
 		            // req.login(user, function (err) {
 		            //   if (err) {
 		            //     res.status(400).send(err);
@@ -59,3 +59,11 @@ exports.editBanner = function (req, res) {
 		    });
 		  }
 		};
+	exports.getBanner = function(){
+		editProfile.findById(req.params.id, function(err, editProfile){
+			console.log('in api id:' ,req.params.id );
+			if(err)
+				res.send(err);
+			res.json(editProfile);
+		});
+	};

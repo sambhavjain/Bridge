@@ -1,9 +1,12 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
 
 <div class="content" ng-controller="editCompanyProfileController" >
-	  <div ng-src="{{bannerimageURL}}" class="banner" style="margin-left:-10%;">
-        <div class="but" style="position:absolute; margin-left:870px; margin-top:220px;" > Select Banner<input type="file" nv-file-select uploader="uploader"><button class="btn btn-primary" ng-click="uploadBanner();">Upload</button><i class="fa fa-upload"></i>&nbsp;Upload</div>
-    </div>
+	  <div class="banner" style="margin-left:-10%;">
+        <div class="but" style="position:absolute; margin-left:870px; margin-top:220px;" >
+					Select Banner<input type="file" nv-file-select uploader="uploader">
+					<button class="btn btn-primary" ng-click="uploadBanner();">Upload</button><i class="fa fa-upload"></i>&nbsp;Upload</div>
+		<img ng-src="{{bannerimageURL}}" style="opacity:none"/>
+	</div>
 
     <div class="sidemenu" >
         <div class="edit" ng-click="showCreateModal()"><span id='clickableAwesomeFont'><i  class="fa fa-pencil-square-o"></i></span></div>

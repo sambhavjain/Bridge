@@ -59,24 +59,17 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
     $scope.uploader.onSuccessItem = function (fileItem, response, status, headers) {
       // Show success message
       $scope.success = true;
-
       // Populate user object
-      $scope.editProfile = Authentication.editProfile = response;
-
-      // Clear upload buttons
-    //  $scope.cancelUpload();
+      $scope.editProfile.bannerImageURL = response.bannerImageURL;
+      console.log(response);
     };
 
     // Called after the user has failed to uploaded a new picture
     $scope.uploader.onErrorItem = function (fileItem, response, status, headers) {
-      // Clear upload buttons
-    //  $scope.cancelUpload();
-
-      // Show error message
       $scope.error = response.message;
     };
 
-    // Change user profile picture
+    // Change Company banner
     $scope.uploadBanner = function () {
       // Clear messages
       $scope.success = $scope.error = null;
@@ -85,5 +78,14 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
       $scope.uploader.uploadAll();
     };
 
+  $scope.getBanner = function(id) {
+    $http.get('/api/core/getBanner/'+id).success(function(data){
+        if(data.state == 'success'){
+          $scope.bannerimageURL = $scope.editProfile.bannerImageURL;
+          console.log('in getBanner success state');
+          $location.path('home.profile');
+        }
+    });
+  }
 }
 ]);

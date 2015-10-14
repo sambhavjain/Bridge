@@ -14,4 +14,5 @@ module.exports = function (app) {
   app.route('/*').get(core.renderIndex);
   app.route('/api/core/editProfile').post(profile.editProfile);
   app.route('/api/core/editBanner').post(profile.editBanner);
+  app.route('/api/core/getBanner/:id').get(profile.getBanner);
 };
